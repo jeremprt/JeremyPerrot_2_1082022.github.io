@@ -2,7 +2,6 @@
 .logoReservia {
     margin-left: 1rem;
 }
-
 body {
     margin: 0px;
     font-family: 'Raleway';
@@ -115,6 +114,12 @@ header .main-container .header-container {
         margin: inherit;
         min-width: 50%;
         margin: auto 0;
+    }
+    .position1
+    {
+        position: relative;
+        top: 30px;
+        right: 20px;
     }
     .menutrait {
         position: absolute;
@@ -233,10 +238,16 @@ form.recherche button{
     padding: 0px 15px;
     border: none;
 }
-.position
+.position1
 {
     position: relative;
     top:12px;
+}
+.position
+{
+    position: relative;
+    top:15px;
+    left: 20px;
 }
 
 @media (max-width:640px) {
