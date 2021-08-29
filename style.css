@@ -16,7 +16,7 @@ a:hover {
     text-decoration: underline;
 }
 
-h1 {
+p {
     font-size: 1em
 }
 .colorGris
@@ -233,6 +233,11 @@ form.recherche button{
     padding: 0px 15px;
     border: none;
 }
+.position
+{
+    position: relative;
+    top:12px;
+}
 
 @media (max-width:640px) {
     form.recherche button[type="submit"] {
@@ -244,8 +249,10 @@ form.recherche button{
 }
 
 @media (max-width:640px) {
-    p.textbtn {
+.textbtn {
         display: none;
+
+
     }
 }
 
@@ -541,13 +548,13 @@ figure:hover {
     border-radius: 20px 0 0 20px;
 }
 
-#hebergement h1,
+#hebergement p,
 #hebergement .stonk {
     display: flex;
     justify-content: space-between;
 }
 
-#hebergement h1 i {
+#hebergement p i {
     margin: auto 0;
 }
 
@@ -562,7 +569,7 @@ figure:hover {
     padding: 0px 0px 0px 20px;
 }
 
-.activiteContainer .fondgris h1 {
+.activiteContainer .fondgris P {
     margin-left: 25px;
 }
 
