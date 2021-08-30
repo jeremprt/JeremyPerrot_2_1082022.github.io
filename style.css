@@ -128,9 +128,8 @@ button:hover{
 .filtres{
     display: flex;
     width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 115px;
+    align-items: flex-start;
+    flex-direction: row;
 }
 .filtres span{
     font-weight: 800;
@@ -293,15 +292,39 @@ aside{
     width: 30.1%;
 }
 .populaire{
-    all: unset;
     font-family: inherit;
     display: inline-block;
     display: flex;
     justify-content: space-between;
     margin: 40px 30px 0px 30px;
 }
+.positionP
+{
+    position: relative;
+    bottom: 53px;
+}
+.positionEtoile
+{
+    position: relative;
+    top: 95px;
+}
+.Enligne
+{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 47px;
+    left: 30px;
+}
+.margin
+{
+    position: relative;
+    bottom: 15px;
+    margin-top: 15px;
+}
 aside div{
-    height: 500px;
+    position: static;
+    top: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -317,8 +340,11 @@ aside div article img{
     border-radius: 10px 0 0 10px;
     object-fit: cover;
 }
+.margin
+{
+    margin-bottom: 2px;
+}
 aside div article div{
-    all: unset;
     font: inherit;
     font-size: inherit;
     padding-left: 20px;
@@ -347,7 +373,6 @@ aside div article div h3:nth-child(2){
     margin-bottom: 10px;
 } 
 aside div article div span{
-    all: unset;
     font: inherit;
     font-size: 0.9em;
     font-weight: 400;
@@ -359,7 +384,6 @@ aside div article div span{
     font-size: 1.6em;
 }
 .etoile_popu{
-    all: unset;
     display: flex;
     justify-content: flex-start;
     font-size: 0.8em;
@@ -368,7 +392,6 @@ aside div article div span{
 .etoile_popu1{
     box-sizing: border-box;
     position: absolute;
-    all: unset;
     display: flex;
     justify-content: flex-start;
     font-size: 0.8em;
@@ -484,60 +507,7 @@ footer section p:hover{
     border-bottom: 1px solid black;
 }
 /*responsive*/
- @media (min-width: 872px) and (max-width: 1160px){
-        .hebergement{
-            flex-direction: column-reverse;
-            margin: 0;
-        }
-        main{
-            height: auto;
-        }
-        .activites{
-            height: 1060px;
-        }
-        .hebergement aside{
-            width: 100%;
-            height: 250px;
-        }
-        .hebergement aside div{
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 0px 40px 0px 40px;
-        }
-        .hebergement aside .populaire{
-            all: unset;
-            display: flex;
-            justify-content: space-between;
-            padding: 0;
-            margin: 40px 40px 0 40px;
-
-        }
-        .hebergement aside div article{
-            width: 29.65%;
-            padding: 4px;
-            height: 150px;
-        }
-        .hebergement aside div article img{
-            height: 150px;
-        }
-        .hebergement aside div article div{
-            padding-left: 10px;
-            padding-right: 0;
-        }
-        .hebergement section{
-            width: auto;
-        }
-        .div_activites{
-            flex-direction: column;
-            justify-content: space-between;
-            height: 930px;
-        }
-        .block1, .block2{
-            width: 100%;
-            justify-content: space-between;
-        }
-}
-@media all and (max-width: 871px){
+@media all and (max-width: 1100px){
     .hebergement{
         flex-direction: column-reverse;
         margin: 0;
@@ -651,10 +621,6 @@ footer section p:hover{
     {
         padding-left: 18px;
     }
-    .filtres div:nth-child(4)
-    {
-        margin-left: 0px;
-    }
     button span{
         display: none;
     }
@@ -694,7 +660,6 @@ footer section p:hover{
     header nav a {
         padding: 0 0 20px 0;
         width: 50%;
-        border-bottom: 3px solid #F2F2F2;
         text-align: center;
     }
 
@@ -704,7 +669,6 @@ footer section p:hover{
         padding-top: 0;
     }
     .inscrire {
-        all: unset;
         position: absolute;
         top: 19px;
         right: 0px;
@@ -713,7 +677,6 @@ footer section p:hover{
         font-weight: bold;
     }
     .inscrire:hover{
-        all: unset;
         border-top: none;
         color: #0065FC;
         font-weight: bold;
@@ -724,5 +687,13 @@ footer section p:hover{
     }
     .barre_nav h1{
         margin-top: 1.8em;
+    }
+}
+@media(max-width:375px)
+{
+    .marginright
+    {
+        position: relative;
+        right: 20px;
     }
 }
